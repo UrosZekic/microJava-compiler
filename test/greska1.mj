@@ -1,0 +1,16 @@
+program greska1
+
+	const int x = 2;
+	int a;
+	int b;
+	char z;
+{
+	void main(){
+		read(x);               //semanticka greska, ne moze konstanta
+		a = 3;                
+		z = 'f';
+		b = a + z; // semanticka greska, moraju oba biti int
+		x = 4; //semanticka greska, konstanti se ne moze promeniti vrednost
+	}
+
+}

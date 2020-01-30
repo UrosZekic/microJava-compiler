@@ -1,0 +1,24 @@
+program greska3
+const bool b = ""true"; // leksicka greska
+	const bool x = "false; // leksicka greska
+	int j;
+{
+
+	
+	int metoda1() int y[];{
+		y = new char[5]; // semanticka, ne poklapaju se tipovi
+		y = new int['r']; // semanticka,mora biti int broj clanova
+		j[3] = 2; // semanticka, mora biti niz
+		return 2;
+	}
+	void metoda2() char c;
+	{
+	 c++;//semanticka, mora biti int
+	 c--;//semanticka, mora biti int
+	 j = - c; // semanticka mora biti int
+	}
+
+	void main(){
+	}
+	
+}

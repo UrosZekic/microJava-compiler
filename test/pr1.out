@@ -1,0 +1,577 @@
+0 [main] INFO rs.ac.bg.etf.pp1.Compiler  - Kompajlira se izvorni fajl 
+47 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #2 program
+47 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #15 pr1
+47 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #5 const
+47 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #15 int
+47 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #15 x
+62 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #6 =
+62 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #14 6
+62 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #7 ;
+62 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #5 const
+62 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #15 char
+62 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #15 y
+62 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #6 =
+62 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #16 d
+62 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #7 ;
+62 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #15 int
+62 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #15 niz
+62 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #9 [
+62 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #10 ]
+62 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #7 ;
+62 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #3 {
+62 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #15 int
+62 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #15 metoda1
+62 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #12 (
+62 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #13 )
+62 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #15 int
+62 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #15 ret
+62 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #7 ;
+62 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #3 {
+62 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #15 ret
+62 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #6 =
+62 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #15 x
+62 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #7 ;
+62 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #15 ret
+62 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #18 ++
+62 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #7 ;
+62 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #28 return
+62 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #15 ret
+62 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #7 ;
+62 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #4 }
+62 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #15 char
+62 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #15 metoda2
+62 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #12 (
+62 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #13 )
+62 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #15 char
+62 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #15 g
+62 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #7 ;
+62 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #3 {
+62 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #15 g
+62 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #6 =
+62 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #16 x
+62 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #7 ;
+62 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #28 return
+62 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #15 g
+62 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #7 ;
+62 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #4 }
+62 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #11 void
+62 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #15 main
+62 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #12 (
+62 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #13 )
+62 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #15 int
+62 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #15 j
+78 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #7 ;
+78 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #3 {
+78 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #27 print
+78 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #12 (
+78 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #15 y
+78 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #13 )
+78 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #7 ;
+78 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #27 print
+78 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #12 (
+78 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #15 metoda2
+78 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #12 (
+78 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #13 )
+78 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #13 )
+78 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #7 ;
+78 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #15 j
+78 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #6 =
+78 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #12 (
+78 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #14 7
+78 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #25 +
+78 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #14 11
+78 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #13 )
+78 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #22 /
+78 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #15 x
+78 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #7 ;
+78 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #15 niz
+78 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #6 =
+78 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #24 new
+78 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #15 int
+78 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #9 [
+78 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #15 j
+78 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #10 ]
+78 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #7 ;
+78 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #15 niz
+78 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #9 [
+78 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #14 0
+78 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #10 ]
+78 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #6 =
+78 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #15 metoda1
+78 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #12 (
+78 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #13 )
+78 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #7 ;
+78 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #15 niz
+78 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #9 [
+78 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #14 0
+78 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #10 ]
+78 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #19 --
+78 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #7 ;
+78 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #27 print
+78 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #12 (
+78 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #15 niz
+78 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #9 [
+78 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #14 0
+78 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #10 ]
+78 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #13 )
+78 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #7 ;
+78 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #4 }
+78 [main] INFO rs.ac.bg.etf.pp1.MJParser  - #4 }
+94 [main] INFO rs.ac.bg.etf.pp1.Compiler  - Program(
+  ProgName(
+   pr1
+  ) [ProgName]
+  ConstDeclarations(
+    ConstDeclarations(
+      NoConstDecl(
+      ) [NoConstDecl]
+      ConstDecl(
+        Type(
+         int
+        ) [Type]
+        ConstId(
+          ConstPart(
+           x
+            NumValue(
+             6
+            ) [NumValue]
+          ) [ConstPart]
+        ) [ConstId]
+      ) [ConstDecl]
+    ) [ConstDeclarations]
+    ConstDecl(
+      Type(
+       char
+      ) [Type]
+      ConstId(
+        ConstPart(
+         y
+          CharValue(
+           d
+          ) [CharValue]
+        ) [ConstPart]
+      ) [ConstId]
+    ) [ConstDecl]
+  ) [ConstDeclarations]
+  VarDeclarations(
+    NoVarDecl(
+    ) [NoVarDecl]
+    VarDecl(
+      Type(
+       int
+      ) [Type]
+      VarOrArrayId(
+        VarArrayId(
+         niz
+        ) [VarArrayId]
+      ) [VarOrArrayId]
+    ) [VarDecl]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    MethodDeclarations(
+      MethodDeclarations(
+        NoMethodDecl(
+        ) [NoMethodDecl]
+        MethodDecl(
+          MethodDeclStart(
+            RetType(
+              Type(
+               int
+              ) [Type]
+             metoda1
+            ) [RetType]
+            LocalDeclarations(
+              NoLocalVars(
+              ) [NoLocalVars]
+              VarDecl(
+                Type(
+                 int
+                ) [Type]
+                VarOrArrayId(
+                  VarId(
+                   ret
+                  ) [VarId]
+                ) [VarOrArrayId]
+              ) [VarDecl]
+            ) [LocalDeclarations]
+          ) [MethodDeclStart]
+          Statements(
+            Statements(
+              Statements(
+                NoStatement(
+                ) [NoStatement]
+                BaseStatement(
+                  Assignment(
+                    Designator(
+                      SimpleDesignator(
+                       ret
+                      ) [SimpleDesignator]
+                    ) [Designator]
+                    PosExpression(
+                      FactorTerm(
+                        VarFactor(
+                          Designator(
+                            SimpleDesignator(
+                             x
+                            ) [SimpleDesignator]
+                          ) [Designator]
+                        ) [VarFactor]
+                      ) [FactorTerm]
+                    ) [PosExpression]
+                  ) [Assignment]
+                ) [BaseStatement]
+              ) [Statements]
+              BaseStatement(
+                Increment(
+                  Designator(
+                    SimpleDesignator(
+                     ret
+                    ) [SimpleDesignator]
+                  ) [Designator]
+                ) [Increment]
+              ) [BaseStatement]
+            ) [Statements]
+            ReturnStatement(
+              PosExpression(
+                FactorTerm(
+                  VarFactor(
+                    Designator(
+                      SimpleDesignator(
+                       ret
+                      ) [SimpleDesignator]
+                    ) [Designator]
+                  ) [VarFactor]
+                ) [FactorTerm]
+              ) [PosExpression]
+            ) [ReturnStatement]
+          ) [Statements]
+        ) [MethodDecl]
+      ) [MethodDeclarations]
+      MethodDecl(
+        MethodDeclStart(
+          RetType(
+            Type(
+             char
+            ) [Type]
+           metoda2
+          ) [RetType]
+          LocalDeclarations(
+            NoLocalVars(
+            ) [NoLocalVars]
+            VarDecl(
+              Type(
+               char
+              ) [Type]
+              VarOrArrayId(
+                VarId(
+                 g
+                ) [VarId]
+              ) [VarOrArrayId]
+            ) [VarDecl]
+          ) [LocalDeclarations]
+        ) [MethodDeclStart]
+        Statements(
+          Statements(
+            NoStatement(
+            ) [NoStatement]
+            BaseStatement(
+              Assignment(
+                Designator(
+                  SimpleDesignator(
+                   g
+                  ) [SimpleDesignator]
+                ) [Designator]
+                PosExpression(
+                  FactorTerm(
+                    FactorValue(
+                      FChar(
+                       x
+                      ) [FChar]
+                    ) [FactorValue]
+                  ) [FactorTerm]
+                ) [PosExpression]
+              ) [Assignment]
+            ) [BaseStatement]
+          ) [Statements]
+          ReturnStatement(
+            PosExpression(
+              FactorTerm(
+                VarFactor(
+                  Designator(
+                    SimpleDesignator(
+                     g
+                    ) [SimpleDesignator]
+                  ) [Designator]
+                ) [VarFactor]
+              ) [FactorTerm]
+            ) [PosExpression]
+          ) [ReturnStatement]
+        ) [Statements]
+      ) [MethodDecl]
+    ) [MethodDeclarations]
+    MethodDecl(
+      MethodDeclStart(
+        RetVoid(
+         main
+        ) [RetVoid]
+        LocalDeclarations(
+          NoLocalVars(
+          ) [NoLocalVars]
+          VarDecl(
+            Type(
+             int
+            ) [Type]
+            VarOrArrayId(
+              VarId(
+               j
+              ) [VarId]
+            ) [VarOrArrayId]
+          ) [VarDecl]
+        ) [LocalDeclarations]
+      ) [MethodDeclStart]
+      Statements(
+        Statements(
+          Statements(
+            Statements(
+              Statements(
+                Statements(
+                  Statements(
+                    NoStatement(
+                    ) [NoStatement]
+                    PrintStatement(
+                      PosExpression(
+                        FactorTerm(
+                          VarFactor(
+                            Designator(
+                              SimpleDesignator(
+                               y
+                              ) [SimpleDesignator]
+                            ) [Designator]
+                          ) [VarFactor]
+                        ) [FactorTerm]
+                      ) [PosExpression]
+                    ) [PrintStatement]
+                  ) [Statements]
+                  PrintStatement(
+                    PosExpression(
+                      FactorTerm(
+                        FactorFuncCall(
+                          Designator(
+                            SimpleDesignator(
+                             metoda2
+                            ) [SimpleDesignator]
+                          ) [Designator]
+                        ) [FactorFuncCall]
+                      ) [FactorTerm]
+                    ) [PosExpression]
+                  ) [PrintStatement]
+                ) [Statements]
+                BaseStatement(
+                  Assignment(
+                    Designator(
+                      SimpleDesignator(
+                       j
+                      ) [SimpleDesignator]
+                    ) [Designator]
+                    PosExpression(
+                      MulOpTerm(
+                        FactorTerm(
+                          ExprFactor(
+                            ExpressionOp(
+                              PosExpression(
+                                FactorTerm(
+                                  FactorValue(
+                                    FNum(
+                                     7
+                                    ) [FNum]
+                                  ) [FactorValue]
+                                ) [FactorTerm]
+                              ) [PosExpression]
+                              Add(
+                              ) [Add]
+                              FactorTerm(
+                                FactorValue(
+                                  FNum(
+                                   11
+                                  ) [FNum]
+                                ) [FactorValue]
+                              ) [FactorTerm]
+                            ) [ExpressionOp]
+                          ) [ExprFactor]
+                        ) [FactorTerm]
+                        Divide(
+                        ) [Divide]
+                        VarFactor(
+                          Designator(
+                            SimpleDesignator(
+                             x
+                            ) [SimpleDesignator]
+                          ) [Designator]
+                        ) [VarFactor]
+                      ) [MulOpTerm]
+                    ) [PosExpression]
+                  ) [Assignment]
+                ) [BaseStatement]
+              ) [Statements]
+              BaseStatement(
+                Assignment(
+                  Designator(
+                    SimpleDesignator(
+                     niz
+                    ) [SimpleDesignator]
+                  ) [Designator]
+                  PosExpression(
+                    FactorTerm(
+                      NewArrayFactor(
+                        Type(
+                         int
+                        ) [Type]
+                        PosExpression(
+                          FactorTerm(
+                            VarFactor(
+                              Designator(
+                                SimpleDesignator(
+                                 j
+                                ) [SimpleDesignator]
+                              ) [Designator]
+                            ) [VarFactor]
+                          ) [FactorTerm]
+                        ) [PosExpression]
+                      ) [NewArrayFactor]
+                    ) [FactorTerm]
+                  ) [PosExpression]
+                ) [Assignment]
+              ) [BaseStatement]
+            ) [Statements]
+            BaseStatement(
+              Assignment(
+                Designator(
+                  ArrayDesignator(
+                    DesigExprListLBracket(
+                      SimpleDesignator(
+                       niz
+                      ) [SimpleDesignator]
+                    ) [DesigExprListLBracket]
+                    PosExpression(
+                      FactorTerm(
+                        FactorValue(
+                          FNum(
+                           0
+                          ) [FNum]
+                        ) [FactorValue]
+                      ) [FactorTerm]
+                    ) [PosExpression]
+                  ) [ArrayDesignator]
+                ) [Designator]
+                PosExpression(
+                  FactorTerm(
+                    FactorFuncCall(
+                      Designator(
+                        SimpleDesignator(
+                         metoda1
+                        ) [SimpleDesignator]
+                      ) [Designator]
+                    ) [FactorFuncCall]
+                  ) [FactorTerm]
+                ) [PosExpression]
+              ) [Assignment]
+            ) [BaseStatement]
+          ) [Statements]
+          BaseStatement(
+            Decrement(
+              Designator(
+                ArrayDesignator(
+                  DesigExprListLBracket(
+                    SimpleDesignator(
+                     niz
+                    ) [SimpleDesignator]
+                  ) [DesigExprListLBracket]
+                  PosExpression(
+                    FactorTerm(
+                      FactorValue(
+                        FNum(
+                         0
+                        ) [FNum]
+                      ) [FactorValue]
+                    ) [FactorTerm]
+                  ) [PosExpression]
+                ) [ArrayDesignator]
+              ) [Designator]
+            ) [Decrement]
+          ) [BaseStatement]
+        ) [Statements]
+        PrintStatement(
+          PosExpression(
+            FactorTerm(
+              VarFactor(
+                Designator(
+                  ArrayDesignator(
+                    DesigExprListLBracket(
+                      SimpleDesignator(
+                       niz
+                      ) [SimpleDesignator]
+                    ) [DesigExprListLBracket]
+                    PosExpression(
+                      FactorTerm(
+                        FactorValue(
+                          FNum(
+                           0
+                          ) [FNum]
+                        ) [FactorValue]
+                      ) [FactorTerm]
+                    ) [PosExpression]
+                  ) [ArrayDesignator]
+                ) [Designator]
+              ) [VarFactor]
+            ) [FactorTerm]
+          ) [PosExpression]
+        ) [PrintStatement]
+      ) [Statements]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+94 [main] INFO rs.ac.bg.etf.pp1.Compiler  - ===================================
+==================SEMANTICKA OBRADA====================
+Pretraga 10 (ret), nadjeno Var ret: int, 0, 1 
+Pretraga 10 (x), nadjeno Con x: int, 6, 0 
+Pretraga 11 (ret), nadjeno Var ret: int, 0, 1 
+Pretraga 12 (ret), nadjeno Var ret: int, 0, 1 
+Pretraga 15 (g), nadjeno Var g: char, 0, 1 
+Pretraga 16 (g), nadjeno Var g: char, 0, 1 
+Pretraga 19 (y), nadjeno Con y: char, 100, 0 
+Pretraga 20 (metoda2), nadjeno Meth metoda2: char, 0, 0 
+Pretraga 21 (j), nadjeno Var j: int, 0, 1 
+Pretraga 21 (x), nadjeno Con x: int, 6, 0 
+Pretraga 22 (niz), nadjeno Var niz: Arr of int, 0, 0 
+Pretraga 22 (j), nadjeno Var j: int, 0, 1 
+Pretraga 23 (niz), nadjeno Var niz: Arr of int, 0, 0 
+Pretraga 23 (metoda1), nadjeno Meth metoda1: int, 0, 0 
+Pretraga 24 (niz), nadjeno Var niz: Arr of int, 0, 0 
+Pretraga 25 (niz), nadjeno Var niz: Arr of int, 0, 0 
+=====================SYMBOL TABLE DUMP=========================
+(Level 0)
+Type int: int, -1, -1 
+Type char: char, -1, -1 
+Con eol: char, 10, 0 
+Con null: Class, 0, 0 
+Meth chr: char, 0, 1 [Var i: int, 0, 1 ]
+Meth ord: int, 0, 1 [Var ch: char, 0, 1 ]
+Meth len: int, 6, 1 [Var arr: Arr of notype, 0, 1 ]
+Type bool: bool, 0, 1 
+Prog pr1: notype, 0, 1 
+     [Con x: int, 6, 0 ]
+     [Con y: char, 100, 0 ]
+     [Var niz: Arr of int, 0, 0 ]
+     [Meth metoda1: int, 13, 0 [Var ret: int, 0, 1 ]]
+     [Meth metoda2: char, 31, 0 [Var g: char, 0, 1 ]]
+     [Meth main: notype, 45, 0 [Var j: int, 0, 1 ]]
+
+==================SINTAKSNA ANALIZA======================
+3	 methods in the program
+0	 global variables
+2	 global constants
+1	 global arrays
+1	 local variables in main
+7	 statements in main
+5	 function calls in main
+USPESNO ZAVRSENO

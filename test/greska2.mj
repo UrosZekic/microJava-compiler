@@ -1,0 +1,22 @@
+program greska2
+	const int b = 10;
+	int q, w z; // sintaksna greska u deklaraciji promenljive
+	int r, t, r; // dvaput deklarisana promenljiva
+	
+{
+	int metoda1() char f;{
+		return f; // semanticka greska, povratni tip ne valja
+	}
+	char metoda2() {
+		// semanticka,nema returna
+	}
+	
+	
+
+	
+	int main() {           
+		print(gg); // semanticka greska, nije deklarisano
+		q = metoda2(); // semanticka, neodgovarajuci tipovi
+	
+	}
+}

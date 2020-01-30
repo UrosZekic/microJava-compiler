@@ -1,0 +1,205 @@
+package rs.ac.bg.etf.pp1;
+import java_cup.runtime.*;
+import rs.ac.bg.etf.pp1.ast.*;
+import org.apache.log4j.*;
+
+parser code {:
+    
+    Logger log = Logger.getLogger(getClass());
+   
+    boolean parseError = false;
+  
+    /***********************************************************************
+    * slede redefinisani metodi za prijavu gresaka radi izmene teksta poruke
+    ***********************************************************************/ 
+    public void report_fatal_error(String message, Object   info) throws java.lang.Exception {
+      done_parsing();
+      report_error(message, info);
+    }
+  
+    public void syntax_error(Symbol cur_token) {
+        report_error("\nSintaksna greska", cur_token);
+    }
+  
+    public void unrecovered_syntax_error(Symbol cur_token) throws java.lang.Exception {
+    	
+        report_fatal_error("Nemoguc oporavak, parsiranje se ne moze nastaviti", cur_token);
+    }
+
+  public void report_error(String message, Object info) {
+  		parseError = true;
+    	StringBuilder msg = new StringBuilder(message); 
+    	if (info instanceof Symbol)
+            msg.append (" na liniji ").append(((Symbol)info).left);
+        log.error(msg.toString());
+    }
+    public void report_info(String message, Object info) {
+        parseError = false;
+        StringBuilder msg = new StringBuilder(message);
+        if (info instanceof Symbol)
+            msg.append(" na liniji ").append(((Symbol)info).left);
+        log.info(msg.toString());
+    }
+
+:}
+scan with {:
+	Symbol s = this.getScanner().next_token();
+	if (s != null && s.value != null) 
+		log.info(s.toString() + " " + s.value.toString());
+	return s;
+:}
+
+
+
+terminal PROG, LBRACE, RBRACE, CONST, EQUAL, SEMI, COMMA, LBRACKET, RBRACKET,VOID, LPAREN, RPAREN;
+terminal Integer NUMBER;
+terminal String IDENT;
+terminal Character CHARS;
+terminal String BOOL; 
+terminal INC, DEC, MINUS, MUL, DIV, MOD, NEW, PLUS,READ, PRINT, RETURN;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgName, RetTypeIdent, MethodDeclStart, Designator, DesigExprList, DesigExprListLBracket, Value ;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, Expression, Factor, Term, FactValue ;
+nonterminal Program, ConstDeclList, ConstDecl, ConstList, ConstPart, VarDeclList, VarDecl, VarList, VarPart;
+nonterminal LocalVarDeclList, MethodDeclList, MethodDecl, StatementList, Statement, DesignatorStatement, AddOp, MulOp;
+
+Program ::=(Program) PROG ProgName:p ConstDeclList VarDeclList LBRACE MethodDeclList RBRACE;
+
+ProgName ::= (ProgName) IDENT: progName;
+
+ConstDeclList ::= (ConstDeclarations) ConstDeclList ConstDecl
+	|
+	(NoConstDecl) /* epsilon */
+	;
+
+ConstDecl ::=(ConstDecl) CONST Type ConstList SEMI;
+
+ConstList ::=(ConstIdList) ConstList COMMA ConstPart
+	|
+	(ConstId) ConstPart;
+	
+ConstPart ::=(ConstPart) IDENT EQUAL Value;
+
+Value ::=(NumValue) NUMBER
+	|
+	(CharValue) CHARS
+	|
+	(BoolValue) BOOL;
+
+Type ::= (Type) IDENT: id;
+
+VarDeclList ::= (VarDeclarations) VarDeclList VarDecl
+	|
+	(NoVarDecl) /* epsilon */
+	;
+	
+VarDecl	 ::= (VarDecl) Type:varType VarList SEMI;
+
+VarList ::= (VarIdList) VarList COMMA VarPart 
+	| 
+ 	(VarOrArrayId) VarPart;
+ 
+VarPart ::= (VarId) IDENT: id 
+		 |
+		 (VarArrayId) IDENT: id LBRACKET RBRACKET
+		 | 
+		 (VarError) error:e
+        	{: parser.report_info("Oporavak od greske u definiciji  promenljive na liniji " + eleft, null); :}               
+		;
+LocalVarDeclList ::=(LocalDeclarations) LocalVarDeclList VarDecl
+	|
+	(NoLocalVars) /* epsilon */
+	;
+	
+MethodDeclList ::=(MethodDeclarations) MethodDeclList MethodDecl
+	|
+	(NoMethodDecl) /* epsilon */
+	;
+
+RetTypeIdent ::=(RetVoid) VOID IDENT:id
+	| (RetType) Type:t IDENT:id
+	;
+
+MethodDecl ::=(MethodDecl) MethodDeclStart StatementList RBRACE;
+
+MethodDeclStart ::=(MethodDeclStart) RetTypeIdent LPAREN RPAREN LocalVarDeclList  LBRACE;
+
+StatementList ::=(Statements) StatementList Statement
+	|
+	(NoStatement) /* epsilon */
+	;
+
+Statement ::=(BaseStatement) DesignatorStatement SEMI
+	|
+	(ReturnStatement) RETURN Expression:e SEMI
+	|
+	(ReturnEmptyStatement) RETURN SEMI
+	|
+	(ReadStatement)READ LPAREN Designator RPAREN SEMI
+	|
+	(PrintStatement)PRINT LPAREN Expression RPAREN SEMI
+	|
+	(PrintWithNumStatement) PRINT LPAREN Expression COMMA NUMBER RPAREN SEMI
+	;
+
+DesignatorStatement ::=(Assignment) Designator EQUAL Expression 
+	|
+	(AfterEqual)Designator EQUAL error:e
+		{: parser.report_info("Izvrsen oporavak do ; u iskazu dodele, u liniji " + eleft,null); :}
+	|
+	(BeforeEqual) Designator error:e
+		{: parser.report_info("Izvrsen oporavak do ; u iskazu dodele, u liniji " + eleft,null); :}		  			
+	|
+	(Increment)Designator INC
+	|
+	(Decrement)Designator DEC
+	|
+	(DesignatorFuncCall) Designator:d LPAREN RPAREN 
+	;
+
+Designator ::=(Designator) DesigExprList:d ;
+
+DesigExprList ::=(ArrayDesignator) DesigExprListLBracket Expression RBRACKET
+	|
+	(SimpleDesignator) IDENT:id;
+	
+DesigExprListLBracket ::=(DesigExprListLBracket) DesigExprList:d LBRACKET;
+
+Expression ::= (NegExpression) MINUS Term 
+	|
+	(PosExpression)Term
+	|
+	(ExpressionOp) Expression AddOp Term 
+	;
+
+Term ::=(FactorTerm) Factor 
+	|
+	(MulOpTerm) Term MulOp Factor
+	;
+
+Factor ::= (VarFactor)Designator
+	|
+	(FactorFuncCall)Designator:d LPAREN RPAREN 
+	|
+	(FactorValue) FactValue
+	|
+	(ExprFactor)LPAREN Expression RPAREN
+	|
+	(NewArrayFactor)NEW Type LBRACKET Expression RBRACKET
+	;
+FactValue ::=(FNum) NUMBER
+	|
+	(FChar) CHARS
+	|
+	(FBool) BOOL;
+	                  
+AddOp ::= (Add) PLUS
+	|
+	(Subtract) MINUS
+	;
+MulOp ::= (Multiply) MUL
+	|
+	(Divide) DIV
+	|
+	(Module) MOD
+	;
+	

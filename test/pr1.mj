@@ -1,0 +1,28 @@
+program pr1
+
+	const int x = 6;
+	const char y = 'd';
+	
+	int niz[];
+	
+{
+	int metoda1() int ret;{
+		ret = x;
+		ret++;
+		return ret;
+	}
+	char metoda2() char g; {
+		g = 'x';
+		return g;
+	}
+	void main() int j; {
+		print(y);
+		print(metoda2());
+		j = (7 + 11)/x;
+		niz = new int[j];
+		niz[0] = metoda1();
+		niz[0]--;
+		print(niz[0]);
+	}
+
+}

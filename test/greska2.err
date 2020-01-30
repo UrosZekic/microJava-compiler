@@ -1,0 +1,8 @@
+Greska na liniji 4jer r  je vec deklarisano
+Greska u liniji 8: tip izraza se ne poklapa sa deklaracijom metode
+Greska u liniji 10: Metoda mora imati return iskaz jer je definisan sa povratnom vrednoscu
+Greska u liniji 17: metoda main mora biti void
+Greska na liniji 18 gg nije deklarisano, nema ga u tabeli simbola
+Greska u liniji 18: tip izraza mora biti int, char ili bool
+Greska u liniji 17: Metoda mora imati return iskaz jer je definisan sa povratnom vrednoscu
+Greska prilikom semanticke analize
